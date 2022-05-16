@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<title>Segredos Masculinos</title>
+<title>Método Revolucionário</title>
 <head>
 <meta name="facebook-domain-verification" content="s022stcvvsg69q0sn0e9z9jx99xq1p" />
 <meta charset="utf-8">
@@ -8,10 +8,9 @@
 <link rel="shortcut icon" href="favicon.ico">
 <style>
     header {
-      background: "bg.jpg";
+      background: url("bg.jpg");
       background-repeat: no-repeat;
     }
-        
     @font-face {
       font-family: Gotham Rounded;
       src: url("font.otf") format("opentype");
@@ -30,12 +29,16 @@
       justify-content: center;
       align-items: center;
       width: 100vw;
-      height: 95vh;
+      height: 83vh;
       background: url("bg.jpg");
       background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
       background-repeat: no-repeat;
+      text-align: center;
+      padding: 15px;
+
     }
-  
     .container {
       width: 700px;
       max-width: 90%;
@@ -58,8 +61,9 @@
         display: grid;
         grid-template-columns: repeat(1, auto);
         gap: 10px;
+      }
     }
-    }
+
     @media only screen and (max-width: 600px) {
         body {
           background-image: url("FundoPS.jpg");
@@ -67,7 +71,7 @@
           background-position: center; 
     }
     }
-      
+
     .btn {
       border-radius: 10px;
       padding: 5px 10px;
@@ -87,6 +91,8 @@
     .hide {
       display: none;
     }
+    
+
 
   </style>
 
@@ -108,20 +114,18 @@
 /></noscript>
 <!-- End Meta Pixel Code -->
 
-
 </head>
 <body>
 
-<!-- Headline -->
-<p style="text-align: center; font-weight: bold;">Responda o questionário abaixo para participar da aula GRATUITA...</p>
-
+<p style="text-align: center; background-color: #FFC5C6; font-weight: bold;"><h1>Esse método servirá para você? Responda o teste abaixo e descubra.</h1></p>
+</div>
 
 <div class="container">
 <div class="black">
 <div id="primeira">
 <div class="question">
 <h1>Pergunta 1</h1>
-<p>Você tem interesse em descobrir técnicas para atrair um homem?</p>
+<p>Você está em um relacionamento?</p>
 </div>
 <div class="answer">
 <button class="btn" onclick="segunda()">SIM</button>
@@ -131,21 +135,30 @@
 <div id="segunda" class="hide">
 <div class="question">
 <h1>Pergunta 2</h1>
-<p>Você tem a mente aberta para novas descobertas científicas no campo da Psicologia e Estudo do Comportamento Humano?</p>
+<p>Quem terminou o seu último relacionamento?</p>
 </div>
 <div class="answer">
-<button class="btn" onclick="terceira()">SIM</button>
-<button class="btn" onclick="terceira()">NÃO</button>
+<button class="btn" onclick="terceira()">EU</button>
+<button class="btn" onclick="terceira()">ELE</button>
 </div>
 </div>
 <div id="terceira" class="hide">
 <div class="question">
 <h1>Pergunta 3</h1>
-<p>O vídeo a seguir tem um limite para pouquíssimas pessoas verem ao mesmo tempo... Você pretende ver até o fim?</p>
+<p>Você tem a mente aberta para novas descobertas científicas no campo da Psicologia e Estudo do Comportamento Humano?</p>
 </div>
 <div class="answer">
-<button class="btn" onclick="redirect()">SIM</button>
-<button class="btn" onclick="redirect()">NÃO</button>
+<button class="btn" onclick="quarta()">SIM</button>
+<button class="btn" onclick="quarta()">NÃO</button>
+</div>
+</div>
+<div id="quarta" class="hide">
+<div class="question">
+<h1><font color="#3DFF39">Parabéns! Você foi aprovada!</font></h1>
+<p>Clique no botão abaixo para assistir a aula GRATUITA.</p>
+</div>
+<div class="black">
+<a class="btn" href="https://hormoniosdoamor.com/hm/">CONTINUAR</a>
 </div>
 </div>
 </div>
@@ -160,8 +173,12 @@
       document.getElementById("segunda").classList.add("hide")
       document.getElementById("terceira").classList.remove("hide")
     }
+    function quarta() {
+      document.getElementById("terceira").classList.add("hide")
+      document.getElementById("quarta").classList.remove("hide")
+    }
     function redirect() {
-      location.href = "https://hormoniosdoamor.com/hm"
+      location.href = "https://hormoniosdoamor.com/hm/"
     }
   </script>
 </body>
